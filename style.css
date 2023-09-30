@@ -1,5 +1,5 @@
 main {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 main h1 {
@@ -7,6 +7,10 @@ main h1 {
   text-align: center;
   font-family: "Amatic SC", cursive;
   font-size: 65px;
+  font-weight:bold;   /*  I tried to achieve the boldness of font I saw
+      in the example, but couldn't, with either numerical or "bold" font
+      weight--and yet I couldn't see any instructions for boldness in the 
+      solution code.  Maybe my browser's a little off?   I don't know.  */
 }
 
 main h2 {
@@ -26,4 +30,38 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+}
+
+.had-to-look-up-answer {
+  background-color: #775f47;
+}    /*  This was a real head-scratcher, or my memory's failing me.
+         I had to consult the solution for this one */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+.group img {
+  width: 100%
+}
+
+@media all and (min-width: 800px) {
+  section {   /* I had to peek here, too, for this bit about padding  */
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
 }
